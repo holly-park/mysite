@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>jobs</th>
+                <th>companies</th>
+                <th>date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in page_obj.0 %}
+            <tr>
+                <td>{{row.jobs}}</td>
+                <td>{{row.companies}}</td>
+                <td>{{row.date}}</td>
+            </tr>
+            {% endfor %}
+
+</div>  
